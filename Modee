@@ -188,7 +188,7 @@ coroutine.wrap(function()
         wait(620)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/trungdepth-dot/Hungerd/refs/heads/main/Entity'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Hungerd/refs/heads/main/Entity"))()
 
 end
 
