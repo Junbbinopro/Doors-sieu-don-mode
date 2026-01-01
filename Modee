@@ -153,7 +153,7 @@ local sctm = math.random(350,15000)
 wait(sctm)
  
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption('Secret entity did not dangerous',true)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Zeca130/doors-my-version-nightmareMode./refs/heads/main/Boomer"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Screamer/refs/heads/main/Entity"))()
  
 end
  
