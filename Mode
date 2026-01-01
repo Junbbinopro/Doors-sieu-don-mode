@@ -1,0 +1,236 @@
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Hard Mode initiated!",true)
+wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Very Good luck!",true)
+
+--Cave ambience
+local sound = Instance.new("Sound")
+
+sound.SoundId = "rbxassetid://8734471313"
+
+sound.Volume = 3
+
+sound.Looped = true
+
+sound:Play()
+
+sound.Parent = workspace
+
+-- new fog
+local Lighting = game:GetService("Lighting")
+Lighting.Ambient = Color3.new(0, 0, 0)
+Lighting.Brightness = 0.1
+Lighting.FogEnd = 50
+Lighting.FogStart = 35
+Lighting.FogColor = Color3.new(0, 0, 0)
+
+-- goofy screech
+game.ReplicatedStorage.Entities.Screech.Top.Eyes.Color = Color3.fromRGB(255, 255, 0)
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Caught.SoundId = "rbxassetid://7492033495"
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Caught.PlaybackSpeed = 1.6
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.Screech.Attack.SoundId = "rbxassetid://8080941676"
+
+-- goofy hide
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.HideMonster.Scare.SoundId = "rbxassetid://9126213741"
+
+-- goofy spider
+game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.SpiderJumpscare.Scare.SoundId = "rbxassetid://8080941676"
+
+-- Depth
+coroutine.wrap(function()
+    while true do
+        wait(90)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Depth-entity/refs/heads/main/Depth"))()
+    end
+end)()
+
+-- Guardian 
+coroutine.wrap(function()
+    while true do
+        wait(150)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Guardian-entity/refs/heads/main/Guardian"))()
+    end
+end)()
+
+-- Wh1t3
+coroutine.wrap(function()
+    while true do
+        wait(190)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Wh1t3/refs/heads/main/Entity"))()
+    end
+end)()
+
+-- Greance
+coroutine.wrap(function()
+    while true do
+        wait(215)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Entity-greance/refs/heads/main/Greance-20"))()
+    end
+end)()
+
+-- Surge
+coroutine.wrap(function()
+    while true do
+        wait(250)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Entity-surge/refs/heads/main/Surge-20"))()
+    end
+end)()
+
+-- Him
+coroutine.wrap(function()
+    while true do
+        wait(280)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Him-entity-doors/refs/heads/main/Him"))()
+    end
+end)()
+
+-- Cease
+coroutine.wrap(function()
+    while true do
+        wait(325)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastefy.app/ofutwkjb/raw"))()
+    end
+end)()
+
+-- shocker
+coroutine.wrap(function()
+    while true do
+        wait(35)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/vct0721/Doors-Stuff/refs/heads/main/Entities/Shocker"))()
+    end
+end)()
+
+-- blink
+coroutine.wrap(function()
+    while true do
+        wait(350)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+        loadstring(game:HttpGet("https://github.com/PABMAXICHAC/doors-monsters-scripts/raw/main/blinkcrux"))()
+    end
+end)()
+
+-- Greed
+coroutine.wrap(function()
+    while true do
+        wait(550)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Entity-greed/refs/heads/main/Greed-update"))()
+    end
+end)()
+
+-- Black
+coroutine.wrap(function()
+    while true do
+        wait(320)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Black-smile/refs/heads/main/Black"))()
+    end
+end)()
+
+-- Boomer
+ 
+coroutine.wrap(function()
+ 
+while true do
+ 
+local sctm = math.random(350,15000)
+ 
+wait(sctm)
+ 
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption('Secret entity did not dangerous',true)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Zeca130/doors-my-version-nightmareMode./refs/heads/main/Boomer"))()
+ 
+end
+ 
+end)()
+
+-- Munci
+coroutine.wrap(function()
+    while true do
+        wait(600)
+         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Junbbinopro/Munci-entity/refs/heads/main/Munci-20'))()
+ 
+end
+ 
+end)()
+
+-- Blue face
+coroutine.wrap(function()
+    while true do
+        wait(440)
+         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Blue-face/refs/heads/main/Entity"))()
+
+end
+    
+end)()
+
+-- hunger
+coroutine.wrap(function()
+    while true do
+        wait(620)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/trungdepth-dot/Hungerd/refs/heads/main/Entity'))()
+
+end
+
+end)()
+
+-- 200
+coroutine.wrap(function()
+    while true do
+        wait(210)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/200-entity/refs/heads/main/Entity"))()
+
+end
+
+end)()
+
+-- Bluyer
+coroutine.wrap(function()
+    while true do
+        wait(290)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/trungdepth-dot/Entity-bluyer/refs/heads/main/Entity-20"))()
+
+end
+
+end)()
+
+-- Trauma
+coroutine.wrap(function()
+    while true do
+        wait(230)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Trauma-entity/refs/heads/main/Trauma"))()
+
+end
+
+end)()
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Sprint-stamina-v2/refs/heads/main/Sprint"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junbbinopro/Guiding-light-candle/refs/heads/main/Candle"))()
